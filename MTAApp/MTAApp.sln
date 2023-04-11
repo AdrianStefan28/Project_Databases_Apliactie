@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33502.453
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTAApp", "MTAApp\MTAApp.csproj", "{9C731F22-5608-4A05-B2C3-AD627B19F8AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{63CDBFAE-27AC-4D42-AA3F-CF28A1864F09}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{A9870A0E-635A-4762-9A84-099D9EF9E93F}"
+	ProjectSection(SolutionItems) = preProject
+		MTAApp.DataAccess.Abstractions = MTAApp.DataAccess.Abstractions
+		MTAApp.DataAccess.EF = MTAApp.DataAccess.EF
+		MTAApp.DataAccess.Model = MTAApp.DataAccess.Model
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppLogic", "AppLogic", "{9EA98305-2053-4CDF-A016-A47CF4E464BF}"
+	ProjectSection(SolutionItems) = preProject
+		MTAApp.Logic = MTAApp.Logic
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C731F22-5608-4A05-B2C3-AD627B19F8AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C731F22-5608-4A05-B2C3-AD627B19F8AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C731F22-5608-4A05-B2C3-AD627B19F8AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C731F22-5608-4A05-B2C3-AD627B19F8AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9C731F22-5608-4A05-B2C3-AD627B19F8AD} = {63CDBFAE-27AC-4D42-AA3F-CF28A1864F09}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D8716CB8-A37A-4014-B7B3-973A91ECA9AC}
+	EndGlobalSection
+EndGlobal
