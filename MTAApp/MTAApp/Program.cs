@@ -1,13 +1,14 @@
 using Microsoft.EntityFrameworkCore;
-using MTAApp.Models;
+using MTAApp.DataAccess.Abstractions;
+using MTAApp.DataAccess.EF;
 
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<DbContext, MTAContext>(options =>
+    options.UseSqlServer(connectionString));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<MTAContext>(options =>
-options.UseSqlServer(builder.Configuration.GetConnectionString("MTAAppDb")));
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

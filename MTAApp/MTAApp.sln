@@ -3,21 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTAApp", "MTAApp\MTAApp.csproj", "{9C731F22-5608-4A05-B2C3-AD627B19F8AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAApp", "MTAApp\MTAApp.csproj", "{9C731F22-5608-4A05-B2C3-AD627B19F8AD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{63CDBFAE-27AC-4D42-AA3F-CF28A1864F09}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{A9870A0E-635A-4762-9A84-099D9EF9E93F}"
-	ProjectSection(SolutionItems) = preProject
-		MTAApp.DataAccess.Abstractions = MTAApp.DataAccess.Abstractions
-		MTAApp.DataAccess.EF = MTAApp.DataAccess.EF
-		MTAApp.DataAccess.Model = MTAApp.DataAccess.Model
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppLogic", "AppLogic", "{9EA98305-2053-4CDF-A016-A47CF4E464BF}"
-	ProjectSection(SolutionItems) = preProject
-		MTAApp.Logic = MTAApp.Logic
-	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTAApp.DataAccess.Abstractions", "MTAApp.DataAccess.Abstractions\MTAApp.DataAccess.Abstractions.csproj", "{EE32D6B0-9E68-42C1-8E31-BD6B891BC43B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTAApp.DataAccess.EF", "MTAApp.DataAccess.EF\MTAApp.DataAccess.EF.csproj", "{0B4B3B18-6E5B-4AFB-92FB-8BE3750B9E7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTAApp.DataAccess.Model", "MTAApp.DataAccess.Model\MTAApp.DataAccess.Model.csproj", "{83483428-7434-462F-ACC1-B0285D3C8690}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTAApp.Logic", "MTAApp.Logic\MTAApp.Logic.csproj", "{FC180724-57A9-4B65-8CDF-A02FE6DA0483}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,12 +29,32 @@ Global
 		{9C731F22-5608-4A05-B2C3-AD627B19F8AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C731F22-5608-4A05-B2C3-AD627B19F8AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C731F22-5608-4A05-B2C3-AD627B19F8AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE32D6B0-9E68-42C1-8E31-BD6B891BC43B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE32D6B0-9E68-42C1-8E31-BD6B891BC43B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE32D6B0-9E68-42C1-8E31-BD6B891BC43B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE32D6B0-9E68-42C1-8E31-BD6B891BC43B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B4B3B18-6E5B-4AFB-92FB-8BE3750B9E7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B4B3B18-6E5B-4AFB-92FB-8BE3750B9E7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B4B3B18-6E5B-4AFB-92FB-8BE3750B9E7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B4B3B18-6E5B-4AFB-92FB-8BE3750B9E7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83483428-7434-462F-ACC1-B0285D3C8690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83483428-7434-462F-ACC1-B0285D3C8690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83483428-7434-462F-ACC1-B0285D3C8690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83483428-7434-462F-ACC1-B0285D3C8690}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC180724-57A9-4B65-8CDF-A02FE6DA0483}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC180724-57A9-4B65-8CDF-A02FE6DA0483}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC180724-57A9-4B65-8CDF-A02FE6DA0483}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC180724-57A9-4B65-8CDF-A02FE6DA0483}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9C731F22-5608-4A05-B2C3-AD627B19F8AD} = {63CDBFAE-27AC-4D42-AA3F-CF28A1864F09}
+		{EE32D6B0-9E68-42C1-8E31-BD6B891BC43B} = {A9870A0E-635A-4762-9A84-099D9EF9E93F}
+		{0B4B3B18-6E5B-4AFB-92FB-8BE3750B9E7C} = {A9870A0E-635A-4762-9A84-099D9EF9E93F}
+		{83483428-7434-462F-ACC1-B0285D3C8690} = {A9870A0E-635A-4762-9A84-099D9EF9E93F}
+		{FC180724-57A9-4B65-8CDF-A02FE6DA0483} = {9EA98305-2053-4CDF-A016-A47CF4E464BF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D8716CB8-A37A-4014-B7B3-973A91ECA9AC}

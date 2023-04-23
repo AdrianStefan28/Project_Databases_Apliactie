@@ -73,3 +73,9 @@ C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\M
 C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp\obj\Debug\net7.0\MTAApp.pdb
 C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp\obj\Debug\net7.0\MTAApp.genruntimeconfig.cache
 C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp\obj\Debug\net7.0\ref\MTAApp.dll
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp\bin\Debug\net7.0\MTAApp.DataAccess.Abstractions.dll
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp\bin\Debug\net7.0\MTAApp.DataAccess.EF.dll
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp\bin\Debug\net7.0\MTAApp.DataAccess.Model.dll
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp\bin\Debug\net7.0\MTAApp.DataAccess.EF.pdb
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp\bin\Debug\net7.0\MTAApp.DataAccess.Abstractions.pdb
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp\bin\Debug\net7.0\MTAApp.DataAccess.Model.pdb

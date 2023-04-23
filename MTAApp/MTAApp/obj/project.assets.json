@@ -1132,6 +1132,46 @@
             "rid": "win"
           }
         }
+      },
+      "MTAApp.DataAccess.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "MTAApp.DataAccess.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MTAApp.DataAccess.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MTAApp.DataAccess.Abstractions.dll": {}
+        }
+      },
+      "MTAApp.DataAccess.EF/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "MTAApp.DataAccess.Abstractions": "1.0.0",
+          "MTAApp.DataAccess.Model": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.4",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.4"
+        },
+        "compile": {
+          "bin/placeholder/MTAApp.DataAccess.EF.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MTAApp.DataAccess.EF.dll": {}
+        }
+      },
+      "MTAApp.DataAccess.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/MTAApp.DataAccess.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MTAApp.DataAccess.Model.dll": {}
+        }
       }
     }
   },
@@ -3452,10 +3492,26 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "MTAApp.DataAccess.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../MTAApp.DataAccess.Abstractions/MTAApp.DataAccess.Abstractions.csproj",
+      "msbuildProject": "../MTAApp.DataAccess.Abstractions/MTAApp.DataAccess.Abstractions.csproj"
+    },
+    "MTAApp.DataAccess.EF/1.0.0": {
+      "type": "project",
+      "path": "../MTAApp.DataAccess.EF/MTAApp.DataAccess.EF.csproj",
+      "msbuildProject": "../MTAApp.DataAccess.EF/MTAApp.DataAccess.EF.csproj"
+    },
+    "MTAApp.DataAccess.Model/1.0.0": {
+      "type": "project",
+      "path": "../MTAApp.DataAccess.Model/MTAApp.DataAccess.Model.csproj",
+      "msbuildProject": "../MTAApp.DataAccess.Model/MTAApp.DataAccess.Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "MTAApp.DataAccess.EF >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.4",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.4"
@@ -3487,7 +3543,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Ady\\Documents\\Facultate\\Proiect Aplicatie\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.EF\\MTAApp.DataAccess.EF.csproj": {
+              "projectPath": "C:\\Users\\Ady\\Documents\\Facultate\\Proiect Aplicatie\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.EF\\MTAApp.DataAccess.EF.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

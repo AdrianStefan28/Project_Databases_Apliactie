@@ -1,0 +1,17 @@
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.EF\obj\Debug\net7.0\MTAApp.DataAccess.EF.csproj.AssemblyReference.cache
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.EF\obj\Debug\net7.0\MTAApp.DataAccess.EF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.EF\obj\Debug\net7.0\MTAApp.DataAccess.EF.AssemblyInfoInputs.cache
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.EF\obj\Debug\net7.0\MTAApp.DataAccess.EF.AssemblyInfo.cs
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.EF\obj\Debug\net7.0\MTAApp.DataAccess.EF.csproj.CoreCompileInputs.cache
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.EF\bin\Debug\net7.0\MTAApp.DataAccess.EF.deps.json
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.EF\bin\Debug\net7.0\MTAApp.DataAccess.EF.dll
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.EF\bin\Debug\net7.0\MTAApp.DataAccess.EF.pdb
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.EF\bin\Debug\net7.0\MTAApp.DataAccess.Abstractions.dll
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.EF\bin\Debug\net7.0\MTAApp.DataAccess.Model.dll
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.EF\bin\Debug\net7.0\MTAApp.DataAccess.Abstractions.pdb
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.EF\bin\Debug\net7.0\MTAApp.DataAccess.Model.pdb
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.EF\obj\Debug\net7.0\MTAApp.DataAccess.EF.csproj.CopyComplete
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.EF\obj\Debug\net7.0\MTAApp.DataAccess.EF.dll
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.EF\obj\Debug\net7.0\refint\MTAApp.DataAccess.EF.dll
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.EF\obj\Debug\net7.0\MTAApp.DataAccess.EF.pdb
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.EF\obj\Debug\net7.0\ref\MTAApp.DataAccess.EF.dll
