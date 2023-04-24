@@ -13,3 +13,18 @@ C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\M
 C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Abstractions\obj\Debug\net7.0\refint\MTAApp.DataAccess.Abstractions.dll
 C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Abstractions\obj\Debug\net7.0\MTAApp.DataAccess.Abstractions.pdb
 C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Abstractions\obj\Debug\net7.0\ref\MTAApp.DataAccess.Abstractions.dll
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Abstractions\bin\Debug\net7.0\MTAApp.DataAccess.Abstractions.deps.json
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Abstractions\bin\Debug\net7.0\MTAApp.DataAccess.Abstractions.dll
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Abstractions\bin\Debug\net7.0\MTAApp.DataAccess.Abstractions.pdb
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Abstractions\bin\Debug\net7.0\MTAApp.DataAccess.Model.dll
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Abstractions\bin\Debug\net7.0\MTAApp.DataAccess.Model.pdb
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Abstractions\obj\Debug\net7.0\MTAApp.DataAccess.Abstractions.csproj.AssemblyReference.cache
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Abstractions\obj\Debug\net7.0\MTAApp.DataAccess.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Abstractions\obj\Debug\net7.0\MTAApp.DataAccess.Abstractions.AssemblyInfoInputs.cache
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Abstractions\obj\Debug\net7.0\MTAApp.DataAccess.Abstractions.AssemblyInfo.cs
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Abstractions\obj\Debug\net7.0\MTAApp.DataAccess.Abstractions.csproj.CoreCompileInputs.cache
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Abstractions\obj\Debug\net7.0\MTAApp.DataAccess.Abstractions.csproj.CopyComplete
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Abstractions\obj\Debug\net7.0\MTAApp.DataAccess.Abstractions.dll
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Abstractions\obj\Debug\net7.0\refint\MTAApp.DataAccess.Abstractions.dll
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Abstractions\obj\Debug\net7.0\MTAApp.DataAccess.Abstractions.pdb
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Abstractions\obj\Debug\net7.0\ref\MTAApp.DataAccess.Abstractions.dll

@@ -612,13 +612,17 @@
       },
       "MTAApp.DataAccess.Abstractions/1.0.0": {
         "dependencies": {
-          "MTAApp.DataAccess.Model": "1.0.0"
+          "MTAApp.DataAccess.Model": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.4"
         },
         "runtime": {
           "MTAApp.DataAccess.Abstractions.dll": {}
         }
       },
       "MTAApp.DataAccess.Model/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.4"
+        },
         "runtime": {
           "MTAApp.DataAccess.Model.dll": {}
         }
