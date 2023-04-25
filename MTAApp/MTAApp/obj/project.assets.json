@@ -3701,6 +3701,20 @@
         "runtime": {
           "bin/placeholder/MTAApp.DataAccess.Model.dll": {}
         }
+      },
+      "MTAApp.Logic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "MTAApp.DataAccess.Abstractions": "1.0.0",
+          "MTAApp.DataAccess.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MTAApp.Logic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MTAApp.Logic.dll": {}
+        }
       }
     }
   },
@@ -10654,11 +10668,17 @@
       "type": "project",
       "path": "../MTAApp.DataAccess.Model/MTAApp.DataAccess.Model.csproj",
       "msbuildProject": "../MTAApp.DataAccess.Model/MTAApp.DataAccess.Model.csproj"
+    },
+    "MTAApp.Logic/1.0.0": {
+      "type": "project",
+      "path": "../MTAApp.Logic/MTAApp.Logic.csproj",
+      "msbuildProject": "../MTAApp.Logic/MTAApp.Logic.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "MTAApp.DataAccess.EF >= 1.0.0",
+      "MTAApp.Logic >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.5",
@@ -10694,6 +10714,9 @@
           "projectReferences": {
             "C:\\Users\\Ady\\Documents\\Facultate\\Proiect Aplicatie\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.EF\\MTAApp.DataAccess.EF.csproj": {
               "projectPath": "C:\\Users\\Ady\\Documents\\Facultate\\Proiect Aplicatie\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.EF\\MTAApp.DataAccess.EF.csproj"
+            },
+            "C:\\Users\\Ady\\Documents\\Facultate\\Proiect Aplicatie\\Project_Databases_Apliactie\\MTAApp\\MTAApp.Logic\\MTAApp.Logic.csproj": {
+              "projectPath": "C:\\Users\\Ady\\Documents\\Facultate\\Proiect Aplicatie\\Project_Databases_Apliactie\\MTAApp\\MTAApp.Logic\\MTAApp.Logic.csproj"
             }
           }
         }
