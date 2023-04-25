@@ -12,6 +12,8 @@ builder.Services.AddDbContext<DbContext, MTAContext>(options =>
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IApartmentRepository, ApartmentRepository>();
 builder.Services.AddScoped<ApartmentService>();
+builder.Services.AddScoped<IPollRepository, PollRepository>();
+builder.Services.AddScoped<PollService>();
 
 var app = builder.Build();
 
