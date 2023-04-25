@@ -9,8 +9,8 @@ builder.Services.AddDbContext<DbContext, MTAContext>(options => options.UseSqlSe
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddScoped<IContractRepository, ContractRepository>();
-builder.Services.AddScoped<ContractService>();
+builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+builder.Services.AddScoped<EmployeeService>();
 
 var app = builder.Build();
 
