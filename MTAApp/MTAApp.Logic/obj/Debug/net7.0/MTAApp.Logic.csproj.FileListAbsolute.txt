@@ -10,3 +10,20 @@ C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\M
 C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp.Logic\obj\Debug\net7.0\refint\MTAApp.Logic.dll
 C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp.Logic\obj\Debug\net7.0\MTAApp.Logic.pdb
 C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp.Logic\obj\Debug\net7.0\ref\MTAApp.Logic.dll
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.Logic\bin\Debug\net7.0\MTAApp.Logic.deps.json
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.Logic\bin\Debug\net7.0\MTAApp.Logic.dll
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.Logic\bin\Debug\net7.0\MTAApp.Logic.pdb
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.Logic\bin\Debug\net7.0\MTAApp.DataAccess.Abstractions.dll
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.Logic\bin\Debug\net7.0\MTAApp.DataAccess.Model.dll
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.Logic\bin\Debug\net7.0\MTAApp.DataAccess.Abstractions.pdb
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.Logic\bin\Debug\net7.0\MTAApp.DataAccess.Model.pdb
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.Logic\obj\Debug\net7.0\MTAApp.Logic.csproj.AssemblyReference.cache
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.Logic\obj\Debug\net7.0\MTAApp.Logic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.Logic\obj\Debug\net7.0\MTAApp.Logic.AssemblyInfoInputs.cache
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.Logic\obj\Debug\net7.0\MTAApp.Logic.AssemblyInfo.cs
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.Logic\obj\Debug\net7.0\MTAApp.Logic.csproj.CoreCompileInputs.cache
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.Logic\obj\Debug\net7.0\MTAApp.Logic.csproj.CopyComplete
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.Logic\obj\Debug\net7.0\MTAApp.Logic.dll
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.Logic\obj\Debug\net7.0\refint\MTAApp.Logic.dll
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.Logic\obj\Debug\net7.0\MTAApp.Logic.pdb
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.Logic\obj\Debug\net7.0\ref\MTAApp.Logic.dll
