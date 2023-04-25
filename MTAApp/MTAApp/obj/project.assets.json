@@ -3701,6 +3701,19 @@
         "runtime": {
           "bin/placeholder/MTAApp.DataAccess.Model.dll": {}
         }
+      },
+      "MTAApp.Logic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "MTAApp.DataAccess.Abstractions": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MTAApp.Logic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MTAApp.Logic.dll": {}
+        }
       }
     }
   },
@@ -10654,11 +10667,17 @@
       "type": "project",
       "path": "../MTAApp.DataAccess.Model/MTAApp.DataAccess.Model.csproj",
       "msbuildProject": "../MTAApp.DataAccess.Model/MTAApp.DataAccess.Model.csproj"
+    },
+    "MTAApp.Logic/1.0.0": {
+      "type": "project",
+      "path": "../MTAApp.Logic/MTAApp.Logic.csproj",
+      "msbuildProject": "../MTAApp.Logic/MTAApp.Logic.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "MTAApp.DataAccess.EF >= 1.0.0",
+      "MTAApp.Logic >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.5",
@@ -10666,19 +10685,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ady\\.nuget\\packages\\": {}
+    "C:\\Users\\Vasile\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ady\\Documents\\Facultate\\Proiect Aplicatie\\Project_Databases_Apliactie\\MTAApp\\MTAApp\\MTAApp.csproj",
+      "projectUniqueName": "D:\\SE-project\\Project_Databases_Apliactie\\MTAApp\\MTAApp\\MTAApp.csproj",
       "projectName": "MTAApp",
-      "projectPath": "C:\\Users\\Ady\\Documents\\Facultate\\Proiect Aplicatie\\Project_Databases_Apliactie\\MTAApp\\MTAApp\\MTAApp.csproj",
-      "packagesPath": "C:\\Users\\Ady\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ady\\Documents\\Facultate\\Proiect Aplicatie\\Project_Databases_Apliactie\\MTAApp\\MTAApp\\obj\\",
+      "projectPath": "D:\\SE-project\\Project_Databases_Apliactie\\MTAApp\\MTAApp\\MTAApp.csproj",
+      "packagesPath": "C:\\Users\\Vasile\\.nuget\\packages\\",
+      "outputPath": "D:\\SE-project\\Project_Databases_Apliactie\\MTAApp\\MTAApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ady\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Vasile\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10692,8 +10711,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Ady\\Documents\\Facultate\\Proiect Aplicatie\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.EF\\MTAApp.DataAccess.EF.csproj": {
-              "projectPath": "C:\\Users\\Ady\\Documents\\Facultate\\Proiect Aplicatie\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.EF\\MTAApp.DataAccess.EF.csproj"
+            "D:\\SE-project\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.EF\\MTAApp.DataAccess.EF.csproj": {
+              "projectPath": "D:\\SE-project\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.EF\\MTAApp.DataAccess.EF.csproj"
+            },
+            "D:\\SE-project\\Project_Databases_Apliactie\\MTAApp\\MTAApp.Logic\\MTAApp.Logic.csproj": {
+              "projectPath": "D:\\SE-project\\Project_Databases_Apliactie\\MTAApp\\MTAApp.Logic\\MTAApp.Logic.csproj"
             }
           }
         }
