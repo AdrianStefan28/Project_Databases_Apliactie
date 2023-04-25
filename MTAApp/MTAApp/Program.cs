@@ -12,6 +12,8 @@ builder.Services.AddDbContext<DbContext, MTAContext>(options =>
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IPaymentReportRepository, PaymentReportRepository>();
 builder.Services.AddScoped<PaymentReportService>();
+builder.Services.AddScoped<IContractRepository, ContractRepository>();
+builder.Services.AddScoped<ContractService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
