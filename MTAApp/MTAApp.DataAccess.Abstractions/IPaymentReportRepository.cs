@@ -9,5 +9,6 @@ namespace MTAApp.DataAccess.Abstractions
 {
     public interface IPaymentReportRepository : IBaseRepository<PaymentReport>
     {
+        PaymentReport? GetPaymentReportByProfit(double profit);
     }
 }

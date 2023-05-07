@@ -20,5 +20,15 @@ namespace MTAApp.Logic
         {
             return paymentReportRepository.GetAll();
         }
+
+        public PaymentReport GetPaymentReport(int id)
+        {
+            return paymentReportRepository.Get(id);
+        }
+
+        public PaymentReport AddPaymentReport(PaymentReport paymentReport)
+        {
+            return paymentReportRepository.Add(paymentReport);
+        }
     }
 }

@@ -14,5 +14,11 @@ namespace MTAApp.DataAccess.EF
         public PaymentReportRepository(DbContext dbContext) : base(dbContext)
         {
         }
+
+        public PaymentReport GetPaymentReportByProfit(double profit)
+        {
+            return dbContext.Set<PaymentReport>().Where(p => p.Profit >= profit)
+                                            .FirstOrDefault();
+        }
     }
 }
