@@ -11,8 +11,12 @@ namespace MTAApp.DataAccess.EF
 {
     public class ContractRepository : BaseRepository<Contract>, IContractRepository
     {
-        public ContractRepository(DbContext dbContext) : base(dbContext)
+        public ContractRepository(DbContext dbContext) : base(dbContext){ }
+
+        public Contract GetContractByType(string type)
         {
+            return dbContext.Set<Contract>().Where(c => c.Type.Equals(type))
+                                            .FirstOrDefault();
         }
     }
 }

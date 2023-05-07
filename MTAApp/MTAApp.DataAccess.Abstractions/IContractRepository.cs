@@ -9,5 +9,6 @@ namespace MTAApp.DataAccess.Abstractions
 {
     public interface IContractRepository : IBaseRepository<Contract>
     {
+        Contract? GetContractByType(string type);
     }
 }

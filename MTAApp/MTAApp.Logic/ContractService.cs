@@ -21,5 +21,15 @@ namespace MTAApp.Logic
             return contractRepository.GetAll();
         }
 
+        public Contract GetContract(int id)
+        {
+            return contractRepository.Get(id);
+        }
+
+        public Contract AddContract(Contract contract)
+        {
+            return contractRepository.Add(contract);
+        }
+
     }
 }

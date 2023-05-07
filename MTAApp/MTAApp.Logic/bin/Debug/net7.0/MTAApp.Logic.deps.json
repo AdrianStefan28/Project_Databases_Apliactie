@@ -7,14 +7,41 @@
   "targets": {
     ".NETCoreApp,Version=v7.0": {
       "MTAApp.Logic/1.0.0": {
+        "dependencies": {
+          "MTAApp.DataAccess.Abstractions": "1.0.0",
+          "MTAApp.DataAccess.Model": "1.0.0"
+        },
         "runtime": {
           "MTAApp.Logic.dll": {}
+        }
+      },
+      "MTAApp.DataAccess.Abstractions/1.0.0": {
+        "dependencies": {
+          "MTAApp.DataAccess.Model": "1.0.0"
+        },
+        "runtime": {
+          "MTAApp.DataAccess.Abstractions.dll": {}
+        }
+      },
+      "MTAApp.DataAccess.Model/1.0.0": {
+        "runtime": {
+          "MTAApp.DataAccess.Model.dll": {}
         }
       }
     }
   },
   "libraries": {
     "MTAApp.Logic/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MTAApp.DataAccess.Abstractions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MTAApp.DataAccess.Model/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

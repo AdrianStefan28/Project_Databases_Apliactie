@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MTAApp.DataAccess.EF\MTAApp.DataAccess.EF.csproj" />
+    <ProjectReference Include="..\MTAApp.Logic\MTAApp.Logic.csproj" />
   </ItemGroup>
 
 </Project>
