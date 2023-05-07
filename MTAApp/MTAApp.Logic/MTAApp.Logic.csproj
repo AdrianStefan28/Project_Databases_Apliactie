@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MTAApp.DataAccess.Abstractions\MTAApp.DataAccess.Abstractions.csproj" />
+  </ItemGroup>
+
 </Project>

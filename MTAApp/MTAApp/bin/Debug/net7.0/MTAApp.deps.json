@@ -9,6 +9,7 @@
       "MTAApp/1.0.0": {
         "dependencies": {
           "MTAApp.DataAccess.EF": "1.0.0",
+          "MTAApp.Logic": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.5",
@@ -2298,6 +2299,14 @@
         "runtime": {
           "MTAApp.DataAccess.Model.dll": {}
         }
+      },
+      "MTAApp.Logic/1.0.0": {
+        "dependencies": {
+          "MTAApp.DataAccess.Abstractions": "1.0.0"
+        },
+        "runtime": {
+          "MTAApp.Logic.dll": {}
+        }
       }
     }
   },
@@ -3578,6 +3587,11 @@
       "sha512": ""
     },
     "MTAApp.DataAccess.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MTAApp.Logic/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
