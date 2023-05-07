@@ -14,5 +14,10 @@ namespace MTAApp.DataAccess.EF
         public PollRepository(DbContext dbContext) : base(dbContext)
         {
         }
+        public Poll GetPollBySubject(string subject)
+        {
+            return dbContext.Set<Poll>().Where(c => c.Subject.Equals(subject))
+                                            .FirstOrDefault();
+        }
     }
 }

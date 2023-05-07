@@ -20,7 +20,15 @@ namespace MTAApp.Logic
         {
             return pollRepository.GetAll();
         }
+        public Poll GetPoll(int id)
+        {
+            return pollRepository.Get(id);
+        }
 
+        public Poll AddPoll(Poll poll)
+        {
+            return pollRepository.Add(poll);
+        }
 
     }
 }

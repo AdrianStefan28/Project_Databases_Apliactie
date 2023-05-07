@@ -36,5 +36,11 @@ namespace MTAApp.DataAccess.EF
             dbContext.Remove(element);
             dbContext.SaveChanges();
         }
+        public T Get(int id)
+        {
+            var item = dbContext.Set<T>()
+                                .First(x => x.Id == id);
+            return item;
+        }
     }
 }

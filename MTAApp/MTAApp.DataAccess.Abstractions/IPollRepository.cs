@@ -9,5 +9,6 @@ namespace MTAApp.DataAccess.Abstractions
 {
     public interface IPollRepository : IBaseRepository<Poll>
     {
+        Poll? GetPollBySubject(string subject);
     }
 }
