@@ -9,5 +9,6 @@ namespace MTAApp.DataAccess.Abstractions
 {
     public interface IEmployeeRepository : IBaseRepository<Employee>
     {
+        Employee? GetEmployeeByName(string fname, string lname);
     }
 }

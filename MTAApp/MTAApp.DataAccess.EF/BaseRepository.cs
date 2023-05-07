@@ -22,7 +22,12 @@ namespace MTAApp.DataAccess.EF
             dbContext.SaveChanges();
             return added.Entity;
         }
-
+        public T Get(int id)
+        {
+            var item = dbContext.Set<T>()
+                                .First(x => x.Id == id);
+            return item;
+        }
         public IEnumerable<T> GetAll()
         {
             return dbContext.Set<T>()

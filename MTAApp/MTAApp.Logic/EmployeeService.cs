@@ -20,5 +20,14 @@ namespace MTAApp.Logic
         {
             return employeeRepository.GetAll();
         }
+        public Employee GetEmployee(int id)
+        {
+            return employeeRepository.Get(id);
+        }
+
+        public Employee AddEmployee(Employee employee)
+        {
+            return employeeRepository.Add(employee);
+        }
     }
 }

@@ -12,5 +12,10 @@ namespace MTAApp.DataAccess.EF
     public class EmployeeRepository : BaseRepository<Employee>, IEmployeeRepository
     {
         public EmployeeRepository(DbContext dbContext) : base(dbContext) { }
+        public Employee GetEmployeeByName(string fname, string lname)
+        {
+            return dbContext.Set<Employee>().Where(c => c.FirstName.Equals(fname) &&  c.LastName.Equals(lname))
+                                            .FirstOrDefault();
+        }
     }
 }

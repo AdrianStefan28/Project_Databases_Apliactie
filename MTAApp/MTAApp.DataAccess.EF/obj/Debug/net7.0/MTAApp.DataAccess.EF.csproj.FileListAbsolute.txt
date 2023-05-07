@@ -32,3 +32,5 @@ C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.DataAc
 C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.EF\obj\Debug\net7.0\refint\MTAApp.DataAccess.EF.dll
 C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.EF\obj\Debug\net7.0\MTAApp.DataAccess.EF.pdb
 C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.EF\obj\Debug\net7.0\ref\MTAApp.DataAccess.EF.dll
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.EF\bin\Debug\net7.0\MTAApp.DataAccess.EF.runtimeconfig.json
+C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.EF\obj\Debug\net7.0\MTAApp.DataAccess.EF.genruntimeconfig.cache
