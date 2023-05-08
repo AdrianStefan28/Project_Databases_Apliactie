@@ -279,3 +279,5 @@ C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\M
 C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp\bin\Debug\net7.0\MTAApp.Logic.dll
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp\bin\Debug\net7.0\MTAApp.Logic.pdb
