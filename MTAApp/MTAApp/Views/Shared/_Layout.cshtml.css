@@ -10,6 +10,18 @@ a.navbar-brand {
 a {
   color: #0077cc;
 }
+.header {
+    background-color: palegoldenrod;
+    padding: 1px;
+}
+
+.headpos {
+    padding-left: 100px;
+    text-align: left;
+    color: black;
+    font-family: 'Bernard MT';
+    font-size: 4rem;
+}
 
 .btn-primary {
   color: #fff;
@@ -40,9 +52,11 @@ button.accept-policy {
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+    background-color: black;
+    text-align: center;
 }
