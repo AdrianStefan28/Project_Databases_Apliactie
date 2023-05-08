@@ -21,9 +21,10 @@ namespace MTAApp.Controllers
 
         public ActionResult Details(int id)
         {
-            return View();
+            var contracts = contractService.GetContract(id);
+            return View(contracts);
         }
-
+       
         public ActionResult Create()
         { 
             return View();
@@ -31,21 +32,33 @@ namespace MTAApp.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create([Bind("Id,Type,SupplierName,ContractDuration,Cost,AssociationId")] Contract contract)
         {
             try
             {
+                contractService.AddContract(contract);
                 return RedirectToAction(nameof(Index));
             }
             catch
             {
-                return View();
+                return View(contract);
             }
         }
 
         public ActionResult Edit(int id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var contract = contractService.GetContract(id);
+            if (contract == null)
+            {
+                return NotFound();
+            }
+
+            return View(contract);
         }
 
         [HttpPost]
@@ -64,15 +77,27 @@ namespace MTAApp.Controllers
 
         public ActionResult Delete(int id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var contract = contractService.GetContract(id);
+            if(contract == null)
+            {
+                return NotFound();
+            }
+
+            return View(contract);
         }
 
-        [HttpPost]
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult DeleteConfirmed(int id)
         {
             try
             {
+                contractService.DeleteContract(id);
                 return RedirectToAction(nameof(Index));
             }
             catch
