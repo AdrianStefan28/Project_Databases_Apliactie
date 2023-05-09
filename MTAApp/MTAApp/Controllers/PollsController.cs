@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MTAApp.DataAccess.Model;
 using MTAApp.Logic;
 
 namespace MTAApp.Controllers
@@ -20,7 +21,17 @@ namespace MTAApp.Controllers
 
         public ActionResult Details(int id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var polls = pollService.GetPoll(id);
+            if (polls == null)
+            {
+                return NotFound();
+            }
+
+            return View(polls);
         }
 
         public ActionResult Create()
@@ -30,48 +41,79 @@ namespace MTAApp.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create([Bind("Id,Subject,Context,UserId")] Poll poll)
         {
             try
             {
+                pollService.AddPoll(poll);
                 return RedirectToAction(nameof(Index));
             }
             catch
             {
-                return View();
+                return View(poll);
             }
         }
 
         public ActionResult Edit(int id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var poll = pollService.GetPoll(id);
+            if (poll == null)
+            {
+                return NotFound();
+            }
+
+            return View(poll);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int id, [Bind("Id,Subject,Context,UserId")] Poll poll)
         {
+            if (id != poll.Id)
+            {
+                return NotFound();
+            }
+
             try
             {
+                pollService.UpdatePoll(poll);
                 return RedirectToAction(nameof(Index));
             }
             catch
             {
-                return View();
+                return View(poll);
             }
+            return View(poll);
         }
 
         public ActionResult Delete(int id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var poll = pollService.GetPoll(id);
+            if (poll == null)
+            {
+                return NotFound();
+            }
+
+            return View(poll);
         }
 
-        [HttpPost]
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult DeleteConfirmed(int id)
         {
             try
             {
+                pollService.DeletePoll(id);
                 return RedirectToAction(nameof(Index));
             }
             catch

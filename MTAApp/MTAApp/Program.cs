@@ -10,8 +10,6 @@ builder.Services.AddDbContext<DbContext, MTAContext>(options =>
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddScoped<IApartmentRepository, ApartmentRepository>();
-builder.Services.AddScoped<ApartmentService>();
 builder.Services.AddScoped<IPollRepository, PollRepository>();
 builder.Services.AddScoped<PollService>();
 

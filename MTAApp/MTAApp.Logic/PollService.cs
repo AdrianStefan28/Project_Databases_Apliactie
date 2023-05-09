@@ -29,6 +29,15 @@ namespace MTAApp.Logic
         {
             return pollRepository.Add(poll);
         }
+        public Poll UpdatePoll(Poll poll)
+        {
+            return pollRepository.Update(poll);
+        }
+
+        public void DeletePoll(int id)
+        {
+            pollRepository.Remove(id);
+        }
 
     }
 }

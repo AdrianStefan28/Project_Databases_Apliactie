@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TMjbzBC7CH8q8ExFxC+fiD+QTZHvS7pNC5+Ceq1nLnuEuEUfxF+dPaIQuMEhQ0GbbURr8pj+2IYyHTZdo75K+Q==",
+  "dgSpecHash": "gtoMcuRaSI3LJSMvdNco3sxEx9G23abk6bU1gHl32Ig8wQp5S4+m94uMdJWieAggPH2lZpUYNAA99tFQFNogGg==",
   "success": true,
-  "projectFilePath": "D:\\SE-project\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.Abstractions\\MTAApp.DataAccess.Abstractions.csproj",
+  "projectFilePath": "C:\\Users\\40728\\Documents\\GitHub\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.Abstractions\\MTAApp.DataAccess.Abstractions.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

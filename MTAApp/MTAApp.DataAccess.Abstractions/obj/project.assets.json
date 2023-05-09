@@ -27,19 +27,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vasile\\.nuget\\packages\\": {}
+    "C:\\Users\\40728\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SE-project\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.Abstractions\\MTAApp.DataAccess.Abstractions.csproj",
+      "projectUniqueName": "C:\\Users\\40728\\Documents\\GitHub\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.Abstractions\\MTAApp.DataAccess.Abstractions.csproj",
       "projectName": "MTAApp.DataAccess.Abstractions",
-      "projectPath": "D:\\SE-project\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.Abstractions\\MTAApp.DataAccess.Abstractions.csproj",
-      "packagesPath": "C:\\Users\\Vasile\\.nuget\\packages\\",
-      "outputPath": "D:\\SE-project\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.Abstractions\\obj\\",
+      "projectPath": "C:\\Users\\40728\\Documents\\GitHub\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.Abstractions\\MTAApp.DataAccess.Abstractions.csproj",
+      "packagesPath": "C:\\Users\\40728\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\40728\\Documents\\GitHub\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.Abstractions\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Vasile\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\40728\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -53,8 +53,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\SE-project\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.Model\\MTAApp.DataAccess.Model.csproj": {
-              "projectPath": "D:\\SE-project\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.Model\\MTAApp.DataAccess.Model.csproj"
+            "C:\\Users\\40728\\Documents\\GitHub\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.Model\\MTAApp.DataAccess.Model.csproj": {
+              "projectPath": "C:\\Users\\40728\\Documents\\GitHub\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.Model\\MTAApp.DataAccess.Model.csproj"
             }
           }
         }
@@ -84,7 +84,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
