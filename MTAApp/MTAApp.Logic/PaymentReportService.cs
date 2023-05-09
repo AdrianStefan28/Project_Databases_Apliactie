@@ -30,5 +30,15 @@ namespace MTAApp.Logic
         {
             return paymentReportRepository.Add(paymentReport);
         }
+
+        public PaymentReport UpdatePaymentReport(PaymentReport paymentReport)
+        {
+            return paymentReportRepository.Update(paymentReport);
+        }
+
+        public void DeletePaymentReport(int id)
+        {
+            paymentReportRepository.Remove(id);
+        }
     }
 }

@@ -23,6 +23,13 @@ namespace MTAApp.DataAccess.EF
             return added.Entity;
         }
 
+        public T Update(T entity)
+        {
+            var item = dbContext.Set<T>().Update(entity);
+            dbContext.SaveChanges();
+            return item.Entity;
+        }
+
         public T Get(int id)
         {
             var item = dbContext.Set<T>()

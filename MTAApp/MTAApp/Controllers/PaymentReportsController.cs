@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MTAApp.DataAccess.Model;
 using MTAApp.Logic;
+using System.Diagnostics.Contracts;
 
 namespace MTAApp.Controllers
 {
@@ -20,7 +22,17 @@ namespace MTAApp.Controllers
 
         public ActionResult Details(int id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var paymentReports = paymentReportService.GetPaymentReport(id);
+            if (paymentReports == null)
+            {
+                return NotFound();
+            }
+
+            return View(paymentReports);
         }
 
         public ActionResult Create()
@@ -30,48 +42,79 @@ namespace MTAApp.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create([Bind("Id,EmployeesSalary,ContractsCost,RepairingFund,AppsPayCurrentMonth,AppsPayTotalDebt,OtherPays,Expense,Income,Profit,AssociationId")] PaymentReport paymentReport)
         {
             try
             {
+                paymentReportService.AddPaymentReport(paymentReport);
                 return RedirectToAction(nameof(Index));
             }
             catch
             {
-                return View();
+                return View(paymentReport);
             }
         }
 
         public ActionResult Edit(int id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var paymentReport = paymentReportService.GetPaymentReport(id);
+            if (paymentReport == null)
+            {
+                return NotFound();
+            }
+
+            return View(paymentReport);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int id, [Bind("Id,EmployeesSalary,ContractsCost,RepairingFund,AppsPayCurrentMonth,AppsPayTotalDebt,OtherPays,Expense,Income,Profit,AssociationId")] PaymentReport paymentReport)
         {
+            if (id != paymentReport.Id)
+            {
+                return NotFound();
+            }
+
             try
             {
+                paymentReportService.UpdatePaymentReport(paymentReport);
                 return RedirectToAction(nameof(Index));
             }
             catch
             {
-                return View();
+                return View(paymentReport);
             }
+            return View(paymentReport);
         }
 
         public ActionResult Delete(int id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var paymentReport = paymentReportService.GetPaymentReport(id);
+            if (paymentReport == null)
+            {
+                return NotFound();
+            }
+
+            return View(paymentReport);
         }
 
-        [HttpPost]
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult DeleteConfirmed(int id)
         {
             try
             {
+                paymentReportService.DeletePaymentReport(id);
                 return RedirectToAction(nameof(Index));
             }
             catch

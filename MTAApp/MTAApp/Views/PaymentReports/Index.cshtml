@@ -6,6 +6,8 @@
 
 <h1>PaymentReport</h1>
 
+<a asp-action="Create">Add New PaymentReport</a>
+
 <table class="table">
     <thead>
         <tr>
@@ -35,6 +37,9 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Profit);
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AssociationId)
             </th>
             <th></th>
         </tr>
@@ -71,8 +76,12 @@
                     @Html.DisplayFor(modelItem => item.Profit);
                 </td>
                 <td>
+                    @Html.DisplayFor(modelItem => item.AssociationId)
+                </td>
+                <td>
                     @Html.ActionLink("Edit", "Edit", new {  id=item.Id  }) |
                     @Html.ActionLink("Details", "Details", new {  id=item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id=item.Id })
                 </td>
             </tr>
         }
