@@ -21,7 +21,16 @@ namespace MTAApp.Controllers
 
         public ActionResult Details(int id)
         {
+            if(id == null)
+            {
+                return NotFound();
+            }
             var contracts = contractService.GetContract(id);
+            if(contracts == null)
+            {
+                return NotFound();
+            }
+
             return View(contracts);
         }
        
@@ -63,16 +72,23 @@ namespace MTAApp.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int id, [Bind("Id,Type,SupplierName,ContractDuration,Cost,AssociationId")] Contract contract)
         {
+            if(id != contract.Id)
+            {
+                return NotFound();
+            }
+
             try
             {
+                contractService.UpdateContract(contract);
                 return RedirectToAction(nameof(Index));
             }
             catch
             {
-                return View();
+                return View(contract);
             }
+            return View(contract);
         }
 
         public ActionResult Delete(int id)

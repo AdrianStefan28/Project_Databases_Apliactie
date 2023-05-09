@@ -31,6 +31,11 @@ namespace MTAApp.Logic
             return contractRepository.Add(contract);
         }
 
+        public Contract UpdateContract(Contract contract)
+        {
+            return contractRepository.Update(contract);
+        }
+
         public void DeleteContract(int id)
         {
             contractRepository.Remove(id);
