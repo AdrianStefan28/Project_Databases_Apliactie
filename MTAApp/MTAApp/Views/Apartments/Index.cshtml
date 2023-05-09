@@ -1,0 +1,89 @@
+﻿@model IEnumerable<MTAApp.DataAccess.Model.Apartment>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Contracts</h1>
+
+<p>
+    <a asp-action="Create">Add New Apartmentt</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ApNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TenantName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NoPeople)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NoRooms)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ColdWater)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HotWater)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ExtraPayments)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrentMonthPayment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalPaymentDebt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserId)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ApNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenantName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NoPeople)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NoRooms)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ColdWater)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HotWater)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ExtraPayments)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CurrentMonthPayment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalPaymentDebt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new {  id=item.Id  }) |
+            @Html.ActionLink("Details", "Details", new {  id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+    </tbody>
+</table>

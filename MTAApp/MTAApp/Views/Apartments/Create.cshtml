@@ -1,0 +1,82 @@
+﻿@model MTAApp.DataAccess.Model.Apartment
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Contract</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ApNumber" class="control-label"></label>
+                <input asp-for="ApNumber" class="form-control" />
+                <span asp-validation-for="ApNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TenantName" class="control-label"></label>
+                <input asp-for="TenantName" class="form-control" />
+                <span asp-validation-for="TenantName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NoPeople" class="control-label"></label>
+                <input asp-for="NoPeople" class="form-control" />
+                <span asp-validation-for="NoPeople" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NoRooms" class="control-label"></label>
+                <input asp-for="NoRooms" class="form-control" />
+                <span asp-validation-for="NoRooms" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ColdWater" class="control-label"></label>
+                <input asp-for="ColdWater" class="form-control" />
+                <span asp-validation-for="ColdWater" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HotWater" class="control-label"></label>
+                <input asp-for="HotWater" class="form-control" />
+                <span asp-validation-for="HotWater" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ExtraPayments" class="control-label"></label>
+                <input asp-for="ExtraPayments" class="form-control" />
+                <span asp-validation-for="ExtraPayments" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrentMonthPayment" class="control-label"></label>
+                <input asp-for="CurrentMonthPayment" class="form-control" />
+                <span asp-validation-for="CurrentMonthPayment" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TotalPaymentDebt" class="control-label"></label>
+                <input asp-for="TotalPaymentDebt" class="form-control" />
+                <span asp-validation-for="TotalPaymentDebt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserId" class="control-label"></label>
+                <input asp-for="UserId" class="form-control" />
+                <span asp-validation-for="UserId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+

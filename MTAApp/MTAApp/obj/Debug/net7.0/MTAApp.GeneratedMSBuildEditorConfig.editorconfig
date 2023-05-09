@@ -16,6 +16,26 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\SE-project\Project_Databases_Apliactie\MTAApp\MTAApp
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/SE-project/Project_Databases_Apliactie/MTAApp/MTAApp/Views/Apartments/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBhcnRtZW50c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SE-project/Project_Databases_Apliactie/MTAApp/MTAApp/Views/Apartments/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBhcnRtZW50c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SE-project/Project_Databases_Apliactie/MTAApp/MTAApp/Views/Apartments/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBhcnRtZW50c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SE-project/Project_Databases_Apliactie/MTAApp/MTAApp/Views/Apartments/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBhcnRtZW50c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SE-project/Project_Databases_Apliactie/MTAApp/MTAApp/Views/Apartments/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBhcnRtZW50c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/SE-project/Project_Databases_Apliactie/MTAApp/MTAApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

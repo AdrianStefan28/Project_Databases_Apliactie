@@ -14,5 +14,10 @@ namespace MTAApp.DataAccess.EF
         public ApartmentRepository(DbContext dbContext) : base(dbContext)
         {
         }
+        public Apartment GetApartmentByApNr(int apNr)
+        {
+            return dbContext.Set<Apartment>().Where(c => c.ApNumber.Equals(apNr))
+                                            .FirstOrDefault();
+        }
     }
 }

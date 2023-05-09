@@ -20,7 +20,26 @@ namespace MTAApp.Logic
         {
             return apartmentRepository.GetAll();
         }
-     
+        public Apartment GetApartment(int id)
+        {
+            return apartmentRepository.Get(id);
+        }
+
+        public Apartment AddApartment(Apartment apartment)
+        {
+            return apartmentRepository.Add(apartment);
+        }
+
+        public Apartment UpdateApartment(Apartment apartment)
+        {
+            return apartmentRepository.Update(apartment);
+        }
+
+        public void DeleteApartment(int id)
+        {
+            apartmentRepository.Remove(id);
+        }
+
 
     }
 }
