@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "MTAApp.DataAccess.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "MTAApp.DataAccess.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MTAApp.DataAccess.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MTAApp.DataAccess.Abstractions.dll": {}
+        }
+      },
+      "MTAApp.DataAccess.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/MTAApp.DataAccess.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MTAApp.DataAccess.Model.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "MTAApp.DataAccess.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../MTAApp.DataAccess.Abstractions/MTAApp.DataAccess.Abstractions.csproj",
+      "msbuildProject": "../MTAApp.DataAccess.Abstractions/MTAApp.DataAccess.Abstractions.csproj"
+    },
+    "MTAApp.DataAccess.Model/1.0.0": {
+      "type": "project",
+      "path": "../MTAApp.DataAccess.Model/MTAApp.DataAccess.Model.csproj",
+      "msbuildProject": "../MTAApp.DataAccess.Model/MTAApp.DataAccess.Model.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "MTAApp.DataAccess.Abstractions >= 1.0.0",
+      "MTAApp.DataAccess.Model >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Ady\\.nuget\\packages\\": {}
@@ -33,7 +71,14 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Ady\\Documents\\Facultate\\Proiect Aplicatie\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.Abstractions\\MTAApp.DataAccess.Abstractions.csproj": {
+              "projectPath": "C:\\Users\\Ady\\Documents\\Facultate\\Proiect Aplicatie\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.Abstractions\\MTAApp.DataAccess.Abstractions.csproj"
+            },
+            "C:\\Users\\Ady\\Documents\\Facultate\\Proiect Aplicatie\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.Model\\MTAApp.DataAccess.Model.csproj": {
+              "projectPath": "C:\\Users\\Ady\\Documents\\Facultate\\Proiect Aplicatie\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.Model\\MTAApp.DataAccess.Model.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
