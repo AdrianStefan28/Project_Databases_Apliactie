@@ -1,0 +1,79 @@
+﻿@model MTAApp.DataAccess.Model.PaymentReport
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Contract</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.EmployeesSalary)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EmployeesSalary)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ContractsCost)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ContractsCost)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.RepairingFund)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.RepairingFund)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppsPayCurrentMonth)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppsPayCurrentMonth)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppsTotalPayDebt)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppsTotalPayDebt)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.OtherPays)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.OtherPays)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Expense)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Expense)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Income)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Income)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Profit)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Profit)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AssociationId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AssociationId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+

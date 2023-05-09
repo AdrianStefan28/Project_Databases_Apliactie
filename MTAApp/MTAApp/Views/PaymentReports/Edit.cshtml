@@ -1,0 +1,82 @@
+﻿@model MTAApp.DataAccess.Model.PaymentReport
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+
+<h1>Edit</h1>
+
+<h4>PaymentReport</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="EmployeesSalary" class="control-label"></label>
+                <input asp-for="EmployeesSalary" class="form-control" />
+                <span asp-validation-for="EmployeesSalary" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContractsCost" class="control-label"></label>
+                <input asp-for="ContractsCost" class="form-control" />
+                <span asp-validation-for="ContractsCost" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RepairingFund" class="control-label"></label>
+                <input asp-for=" RepairingFund" class="form-control" />
+                <span asp-validation-for=" RepairingFund" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppsPayCurrentMonth" class="control-label"></label>
+                <input asp-for="AppsPayCurrentMonth" class="form-control" />
+                <span asp-validation-for="AppsPayCurrentMonth" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppsTotalPayDebt" class="control-label"></label>
+                <input asp-for="AppsTotalPayDebt" class="form-control" />
+                <span asp-validation-for="AppsTotalPayDebt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OtherPays" class="control-label"></label>
+                <input asp-for="OtherPays" class="form-control" />
+                <span asp-validation-for="OtherPays" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Expense" class="control-label"></label>
+                <input asp-for="Expense" class="form-control" />
+                <span asp-validation-for="Expense" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Income" class="control-label"></label>
+                <input asp-for="Income" class="form-control" />
+                <span asp-validation-for="Income" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Profit" class="control-label"></label>
+                <input asp-for="Profit" class="form-control" />
+                <span asp-validation-for="Profit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AssociationId" class="control-label"></label>
+                <input asp-for="AssociationId" class="form-control" />
+                <span asp-validation-for="AssociationId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

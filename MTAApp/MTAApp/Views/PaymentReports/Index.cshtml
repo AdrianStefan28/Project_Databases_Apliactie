@@ -1,0 +1,89 @@
+﻿@model IEnumerable<MTAApp.DataAccess.Model.PaymentReport>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>PaymentReport</h1>
+
+<a asp-action="Create">Add New PaymentReport</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EmployeesSalary);
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContractsCost);
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RepairingFund);
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AppsPayCurrentMonth);
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AppsTotalPayDebt);
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OtherPays);
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Expense);
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Income);
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Profit);
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AssociationId)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EmployeesSalary);
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ContractsCost);
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RepairingFund);
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AppsPayCurrentMonth);
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem=> item.AppsTotalPayDebt);
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OtherPays);
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem=> item.Expense);
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem=> item.Income);
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Profit);
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AssociationId)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new {  id=item.Id  }) |
+                    @Html.ActionLink("Details", "Details", new {  id=item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

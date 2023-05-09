@@ -1,0 +1,81 @@
+﻿@model MTAApp.DataAccess.Model.PaymentReport
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>PaymentReport</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.EmployeesSalary)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EmployeesSalary)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ContractsCost)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ContractsCost)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.RepairingFund)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.RepairingFund)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppsPayCurrentMonth)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppsPayCurrentMonth)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppsTotalPayDebt)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppsTotalPayDebt)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.OtherPays)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.OtherPays)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Expense)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Expense)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Income)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Income)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Profit)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Profit)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AssociationId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AssociationId)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
