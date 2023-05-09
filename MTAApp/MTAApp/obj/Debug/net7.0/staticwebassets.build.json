@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DP3p9eD35goYUXG9RGN9Kf4fQv16JSANI6JHhaB668k=",
+  "Hash": "mnyqF9AN0CPS4K5pzH+BuAQ9I8a8SkGcttk8T6DLilg=",
   "Source": "MTAApp",
   "BasePath": "_content/MTAApp",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Ady\\Documents\\Facultate\\Proiect Aplicatie\\Project_Databases_Apliactie\\MTAApp\\MTAApp\\wwwroot\\img\\bloc.png",
+      "SourceId": "MTAApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ady\\Documents\\Facultate\\Proiect Aplicatie\\Project_Databases_Apliactie\\MTAApp\\MTAApp\\wwwroot\\",
+      "BasePath": "_content/MTAApp",
+      "RelativePath": "img/bloc.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\bloc.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ady\\Documents\\Facultate\\Proiect Aplicatie\\Project_Databases_Apliactie\\MTAApp\\MTAApp\\wwwroot\\img\\Facebook.png",
+      "SourceId": "MTAApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ady\\Documents\\Facultate\\Proiect Aplicatie\\Project_Databases_Apliactie\\MTAApp\\MTAApp\\wwwroot\\",
+      "BasePath": "_content/MTAApp",
+      "RelativePath": "img/Facebook.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Facebook.png"
     },
     {
       "Identity": "C:\\Users\\Ady\\Documents\\Facultate\\Proiect Aplicatie\\Project_Databases_Apliactie\\MTAApp\\MTAApp\\wwwroot\\js\\site.js",
