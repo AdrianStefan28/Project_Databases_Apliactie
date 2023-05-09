@@ -26,9 +26,18 @@ namespace MTAApp.Logic
             return contactRepository.Get(id);
         }
 
-        public Contact AddContract(Contact contact)
+        public Contact AddContact(Contact contact)
         {
             return contactRepository.Add(contact);
+        }
+        public Contact UpdateContact(Contact contact)
+        {
+            return contactRepository.Update(contact);
+        }
+
+        public void DeleteContact(int id)
+        {
+            contactRepository.Remove(id);
         }
 
     }

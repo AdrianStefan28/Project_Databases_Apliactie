@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MTAApp.DataAccess.Model;
 using MTAApp.Logic;
+using System.Diagnostics.Contracts;
 
 namespace MTAApp.Controllers
 {
@@ -21,7 +22,17 @@ namespace MTAApp.Controllers
 
         public ActionResult Details(int id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var contacts = contactService.GetContact(id);
+            if (contacts == null)
+            {
+                return NotFound();
+            }
+
+            return View(contacts);
         }
 
         public ActionResult Create()
@@ -31,48 +42,79 @@ namespace MTAApp.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create([Bind("Id,FirstName,LastName,Email,Subject,Context,AssociationId")] Contact contact)
         {
             try
             {
+                contactService.AddContact(contact);
                 return RedirectToAction(nameof(Index));
             }
             catch
             {
-                return View();
+                return View(contact);
             }
         }
 
         public ActionResult Edit(int id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var contact = contactService.GetContact(id);
+            if (contact == null)
+            {
+                return NotFound();
+            }
+
+            return View(contact);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int id, [Bind("Id,FirstName,LastName,Email,Subject,Context,AssociationId")] Contact contact)
         {
+            if (id != contact.Id)
+            {
+                return NotFound();
+            }
+
             try
             {
+                contactService.UpdateContact(contact);
                 return RedirectToAction(nameof(Index));
             }
             catch
             {
-                return View();
+                return View(contact);
             }
+            return View(contact);
         }
 
         public ActionResult Delete(int id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var contact = contactService.GetContact(id);
+            if (contact == null)
+            {
+                return NotFound();
+            }
+
+            return View(contact);
         }
 
-        [HttpPost]
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult DeleteConfirmed(int id)
         {
             try
             {
+                contactService.DeleteContact(id);
                 return RedirectToAction(nameof(Index));
             }
             catch

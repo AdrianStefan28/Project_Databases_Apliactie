@@ -27,6 +27,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Context)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AssociationId)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -49,6 +52,9 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Context)
                 </td>
+                <td>
+            @Html.DisplayFor(modelItem => item.AssociationId)
+        </td>
                 <td>
                     @Html.ActionLink("Edit", "Edit", new {  id=item.Id  }) |
                     @Html.ActionLink("Details", "Details", new {  id=item.Id }) |
