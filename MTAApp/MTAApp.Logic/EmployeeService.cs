@@ -29,5 +29,14 @@ namespace MTAApp.Logic
         {
             return employeeRepository.Add(employee);
         }
+        public Employee UpdateEmployee(Employee employee)
+        {
+            return employeeRepository.Update(employee);
+        }
+
+        public void DeleteEmployee(int id)
+        {
+            employeeRepository.Remove(id);
+        }
     }
 }

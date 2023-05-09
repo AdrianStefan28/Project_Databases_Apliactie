@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MTAApp.DataAccess.Model;
 using MTAApp.Logic;
+using System.Diagnostics.Contracts;
 
 namespace MTAApp.Controllers
 {
@@ -21,7 +22,17 @@ namespace MTAApp.Controllers
 
         public ActionResult Details(int id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var employees= employeeService.GetEmployee(id);
+            if (employees == null)
+            {
+                return NotFound();
+            }
+
+            return View(employees);
         }
 
         public ActionResult Create()
@@ -31,48 +42,80 @@ namespace MTAApp.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create([Bind("Id,FirstName,LastName,Type,CNP,Age,ContractDuration,Salary,AssociationId")] Employee employee)
         {
             try
             {
+                employeeService.AddEmployee(employee);
                 return RedirectToAction(nameof(Index));
             }
             catch
             {
-                return View();
+                return View(employee);
             }
         }
 
         public ActionResult Edit(int id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var employee = employeeService.GetEmployee(id);
+            if (employee == null)
+            {
+                return NotFound();
+            }
+
+            return View(employee);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int id, [Bind("Id,FirstName,LastName,Type,CNP,Age,ContractDuration,Salary,AssociationId")] Employee employee)
+
         {
+            if (id != employee.Id)
+            {
+                return NotFound();
+            }
+
             try
             {
+                employeeService.UpdateEmployee(employee);
                 return RedirectToAction(nameof(Index));
             }
             catch
             {
-                return View();
+                return View(employee);
             }
+            return View(employee);
         }
 
         public ActionResult Delete(int id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var employee = employeeService.GetEmployee(id);
+            if (employee == null)
+            {
+                return NotFound();
+            }
+
+            return View(employee);
         }
 
-        [HttpPost]
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult DeleteConfirmed(int id)
         {
             try
             {
+                employeeService.DeleteEmployee(id);
                 return RedirectToAction(nameof(Index));
             }
             catch
