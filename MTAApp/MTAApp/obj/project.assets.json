@@ -10686,19 +10686,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\40728\\.nuget\\packages\\": {}
+    "C:\\Users\\Ady\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\40728\\Documents\\GitHub\\Project_Databases_Apliactie\\MTAApp\\MTAApp\\MTAApp.csproj",
+      "projectUniqueName": "C:\\Users\\Ady\\Documents\\Facultate\\Proiect Aplicatie\\Project_Databases_Apliactie\\MTAApp\\MTAApp\\MTAApp.csproj",
       "projectName": "MTAApp",
-      "projectPath": "C:\\Users\\40728\\Documents\\GitHub\\Project_Databases_Apliactie\\MTAApp\\MTAApp\\MTAApp.csproj",
-      "packagesPath": "C:\\Users\\40728\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\40728\\Documents\\GitHub\\Project_Databases_Apliactie\\MTAApp\\MTAApp\\obj\\",
+      "projectPath": "C:\\Users\\Ady\\Documents\\Facultate\\Proiect Aplicatie\\Project_Databases_Apliactie\\MTAApp\\MTAApp\\MTAApp.csproj",
+      "packagesPath": "C:\\Users\\Ady\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ady\\Documents\\Facultate\\Proiect Aplicatie\\Project_Databases_Apliactie\\MTAApp\\MTAApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\40728\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ady\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10712,11 +10712,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\40728\\Documents\\GitHub\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.EF\\MTAApp.DataAccess.EF.csproj": {
-              "projectPath": "C:\\Users\\40728\\Documents\\GitHub\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.EF\\MTAApp.DataAccess.EF.csproj"
+            "C:\\Users\\Ady\\Documents\\Facultate\\Proiect Aplicatie\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.EF\\MTAApp.DataAccess.EF.csproj": {
+              "projectPath": "C:\\Users\\Ady\\Documents\\Facultate\\Proiect Aplicatie\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.EF\\MTAApp.DataAccess.EF.csproj"
             },
-            "C:\\Users\\40728\\Documents\\GitHub\\Project_Databases_Apliactie\\MTAApp\\MTAApp.Logic\\MTAApp.Logic.csproj": {
-              "projectPath": "C:\\Users\\40728\\Documents\\GitHub\\Project_Databases_Apliactie\\MTAApp\\MTAApp.Logic\\MTAApp.Logic.csproj"
+            "C:\\Users\\Ady\\Documents\\Facultate\\Proiect Aplicatie\\Project_Databases_Apliactie\\MTAApp\\MTAApp.Logic\\MTAApp.Logic.csproj": {
+              "projectPath": "C:\\Users\\Ady\\Documents\\Facultate\\Proiect Aplicatie\\Project_Databases_Apliactie\\MTAApp\\MTAApp.Logic\\MTAApp.Logic.csproj"
             }
           }
         }
@@ -10769,7 +10769,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
