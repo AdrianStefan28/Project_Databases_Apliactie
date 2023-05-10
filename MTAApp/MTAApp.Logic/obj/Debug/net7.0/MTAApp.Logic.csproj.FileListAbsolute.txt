@@ -27,3 +27,8 @@ C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.Logic\
 C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.Logic\obj\Debug\net7.0\refint\MTAApp.Logic.dll
 C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.Logic\obj\Debug\net7.0\MTAApp.Logic.pdb
 C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.Logic\obj\Debug\net7.0\ref\MTAApp.Logic.dll
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp.Logic\bin\Debug\net7.0\MTAApp.DataAccess.Abstractions.dll
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp.Logic\bin\Debug\net7.0\MTAApp.DataAccess.Model.dll
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp.Logic\bin\Debug\net7.0\MTAApp.DataAccess.Abstractions.pdb
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp.Logic\bin\Debug\net7.0\MTAApp.DataAccess.Model.pdb
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp.Logic\obj\Debug\net7.0\MTAApp.Logic.csproj.CopyComplete

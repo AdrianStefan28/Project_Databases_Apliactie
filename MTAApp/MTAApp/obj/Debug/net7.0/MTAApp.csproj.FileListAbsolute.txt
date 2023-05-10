@@ -562,3 +562,5 @@ C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp\obj\De
 C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp\obj\Debug\net7.0\MTAApp.pdb
 C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp\obj\Debug\net7.0\MTAApp.genruntimeconfig.cache
 C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp\obj\Debug\net7.0\ref\MTAApp.dll
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp\bin\Debug\net7.0\MTAApp.Logic.dll
+C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp\bin\Debug\net7.0\MTAApp.Logic.pdb
