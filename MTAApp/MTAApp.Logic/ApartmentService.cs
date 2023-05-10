@@ -40,6 +40,17 @@ namespace MTAApp.Logic
             apartmentRepository.Remove(id);
         }
 
-
+        public double CalculateWaterPay(Apartment apartment)
+        {
+            return (double)(6 * apartment.HotWater + 3 * apartment.ColdWater);
+        }
+        public double CalculateTrashPay(Apartment apartment)
+        {
+            return (double)(11 * apartment.NoPeople);
+        }
+        public string GetApartmentTenantName(Apartment apartment)
+        {
+            return apartment.TenantName;
+        }
     }
 }
