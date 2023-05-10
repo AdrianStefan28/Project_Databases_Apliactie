@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MTAApp.Logic;
 using MTAApp.Models;
 using System.Diagnostics;
 
@@ -7,15 +8,19 @@ namespace MTAApp.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly PollService pollService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, PollService pollService)
         {
             _logger = logger;
+            this.pollService = pollService;
+
         }
 
         public IActionResult Index()
         {
-            return View();
+            var polls = pollService.GetPolls();
+            return View(polls);
         }
 
         public IActionResult Privacy()
