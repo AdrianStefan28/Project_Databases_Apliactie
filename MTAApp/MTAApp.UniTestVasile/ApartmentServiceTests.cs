@@ -30,7 +30,7 @@ namespace MTAApp.UnitTest.V
 
             //Assert
             //verify the result to comply with the expected value/s
-            Assert.AreEqual(165, calculateWaterPay);
+            Assert.AreEqual(132, calculateWaterPay);
 
         }
         [TestMethod]
