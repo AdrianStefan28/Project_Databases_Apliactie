@@ -1,6 +1,6 @@
 using MTAApp.DataAccess.Model;
 using MTAApp.Logic;
-namespace MTAApp.UniTestVasile
+namespace MTAApp.UnitTest.V
 {
     [TestClass]
     public class ApartmentServiceTests
@@ -19,7 +19,8 @@ namespace MTAApp.UniTestVasile
                 ColdWater = 22,
                 HotWater = 11,
                 UserId = 1
-            };
+            }; 
+
 
             ApartmentService service = new ApartmentService(null);
 

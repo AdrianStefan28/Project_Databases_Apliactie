@@ -22,3 +22,15 @@ C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.DataAc
 C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Model\obj\Debug\net7.0\refint\MTAApp.DataAccess.Model.dll
 C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Model\obj\Debug\net7.0\MTAApp.DataAccess.Model.pdb
 C:\Users\40728\Documents\GitHub\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Model\obj\Debug\net7.0\ref\MTAApp.DataAccess.Model.dll
+D:\SE-project\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Model\bin\Debug\net7.0\MTAApp.DataAccess.Model.deps.json
+D:\SE-project\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Model\bin\Debug\net7.0\MTAApp.DataAccess.Model.dll
+D:\SE-project\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Model\bin\Debug\net7.0\MTAApp.DataAccess.Model.pdb
+D:\SE-project\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Model\obj\Debug\net7.0\MTAApp.DataAccess.Model.csproj.AssemblyReference.cache
+D:\SE-project\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Model\obj\Debug\net7.0\MTAApp.DataAccess.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\SE-project\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Model\obj\Debug\net7.0\MTAApp.DataAccess.Model.AssemblyInfoInputs.cache
+D:\SE-project\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Model\obj\Debug\net7.0\MTAApp.DataAccess.Model.AssemblyInfo.cs
+D:\SE-project\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Model\obj\Debug\net7.0\MTAApp.DataAccess.Model.csproj.CoreCompileInputs.cache
+D:\SE-project\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Model\obj\Debug\net7.0\MTAApp.DataAccess.Model.dll
+D:\SE-project\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Model\obj\Debug\net7.0\refint\MTAApp.DataAccess.Model.dll
+D:\SE-project\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Model\obj\Debug\net7.0\MTAApp.DataAccess.Model.pdb
+D:\SE-project\Project_Databases_Apliactie\MTAApp\MTAApp.DataAccess.Model\obj\Debug\net7.0\ref\MTAApp.DataAccess.Model.dll
