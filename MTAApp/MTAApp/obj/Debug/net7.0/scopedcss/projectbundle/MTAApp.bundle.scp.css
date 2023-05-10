@@ -17,6 +17,13 @@ a[b-txr47udomv] {
     padding: 1px;
 }
 
+.center[b-txr47udomv] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
 .headpos[b-txr47udomv] {
     padding-left: 100px;
     text-align: left;
