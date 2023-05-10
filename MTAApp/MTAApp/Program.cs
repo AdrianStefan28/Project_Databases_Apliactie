@@ -20,6 +20,9 @@ builder.Services.AddScoped<IApartmentRepository, ApartmentRepository>();
 builder.Services.AddScoped<ApartmentService>();
 builder.Services.AddScoped<IPollRepository, PollRepository>();
 builder.Services.AddScoped<PollService>();
+builder.Services.AddScoped<IContactRepository, ContactRepository>();
+builder.Services.AddScoped<ContactService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
