@@ -41,5 +41,14 @@ namespace MTAApp.Logic
             contractRepository.Remove(id);
         }
 
+        public double CalculateTotalContractCost(Contract contract)
+        {
+            return (double)(contract.ContractDuration * contract.Cost);
+        }
+
+        public void SetContractDuration(Contract contract, double newContractDuration) 
+        {
+            contract.ContractDuration = newContractDuration;
+        }
     }
 }

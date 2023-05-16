@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAApp.DataAccess.Model", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAApp.Logic", "MTAApp.Logic\MTAApp.Logic.csproj", "{FC180724-57A9-4B65-8CDF-A02FE6DA0483}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTAApp.UnitTest.V", "MTAApp.UniTestVasile\MTAApp.UnitTest.V.csproj", "{58270B5F-33CB-492A-85E6-6ABB26C12E7D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTAApp.UnitTests.Stefan", "UnitTests.Stefan\MTAApp.UnitTests.Stefan.csproj", "{6069280B-2F9B-4E06-BBA2-7B0A1A9A5C3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +47,10 @@ Global
 		{FC180724-57A9-4B65-8CDF-A02FE6DA0483}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC180724-57A9-4B65-8CDF-A02FE6DA0483}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC180724-57A9-4B65-8CDF-A02FE6DA0483}.Release|Any CPU.Build.0 = Release|Any CPU
-		{58270B5F-33CB-492A-85E6-6ABB26C12E7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{58270B5F-33CB-492A-85E6-6ABB26C12E7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{58270B5F-33CB-492A-85E6-6ABB26C12E7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{58270B5F-33CB-492A-85E6-6ABB26C12E7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6069280B-2F9B-4E06-BBA2-7B0A1A9A5C3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6069280B-2F9B-4E06-BBA2-7B0A1A9A5C3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6069280B-2F9B-4E06-BBA2-7B0A1A9A5C3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6069280B-2F9B-4E06-BBA2-7B0A1A9A5C3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
