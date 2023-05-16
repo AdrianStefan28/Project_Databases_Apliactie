@@ -40,5 +40,11 @@ namespace MTAApp.Logic
         {
             paymentReportRepository.Remove(id);
         }
+
+        public double CalculateProfit(PaymentReport paymentReport)
+        {
+            return (double)(paymentReport.Income - paymentReport.Expense);
+
+        }
     }
 }
