@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "TMjbzBC7CH8q8ExFxC+fiD+QTZHvS7pNC5+Ceq1nLnuEuEUfxF+dPaIQuMEhQ0GbbURr8pj+2IYyHTZdo75K+Q==",
+  "dgSpecHash": "tfx0ckSbfKIDhU7AZTJYhsGWVVDhbpEm+N4kburDjO6/q4ipHiwFNQ6m7bVpzzWAvCzKS1PlVVMPEZK3UexY8w==",
   "success": true,
-  "projectFilePath": "D:\\SE-project\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.Abstractions\\MTAApp.DataAccess.Abstractions.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Ady\\Documents\\Facultate\\Proiect Aplicatie\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.Abstractions\\MTAApp.DataAccess.Abstractions.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ady\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
+    "C:\\Users\\Ady\\.nuget\\packages\\moq\\4.18.4\\moq.4.18.4.nupkg.sha512",
+    "C:\\Users\\Ady\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

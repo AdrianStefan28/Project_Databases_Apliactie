@@ -50,5 +50,10 @@ namespace MTAApp.Logic
         {
             contract.ContractDuration = newContractDuration;
         }
+
+        public Contract GetContractByType(string type)
+        {
+            return contractRepository.GetContractByType(type);
+        }
     }
 }
