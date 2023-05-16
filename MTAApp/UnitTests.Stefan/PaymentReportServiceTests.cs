@@ -78,7 +78,7 @@ namespace MTAApp.UnitTests.Stefan
             //arrange
             PaymentReportService service = new PaymentReportService(paymentReportRepositoryMock.Object);
             //act
-            var paymentReport = service.GetPaymentReportByProfit(200);
+            var paymentReport = service.GetPaymentReportByProfit(300);
 
             //assert
             Assert.IsNotNull(paymentReport);
