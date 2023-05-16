@@ -113,13 +113,13 @@ namespace MTAApp.UnitTests.Stefan
             //arrange
             ContractService service = new ContractService(contractRepositoryMock.Object);
             //act
-            var contract = service.GetContractByType("Salubrizare");
+            var contract = service.GetContractByType("Electricitate");
 
             //assert
             Assert.IsNotNull(contract);
-            Assert.AreEqual(2, contract.Id);
-            Assert.AreEqual("IRIDEX", contract.SupplierName);
-            Assert.AreEqual("Salubrizare", contract.Type);
+            Assert.AreEqual(1, contract.Id);
+            Assert.AreEqual("ENEL", contract.SupplierName);
+            Assert.AreEqual("Electricitate", contract.Type);
         }
 
     }

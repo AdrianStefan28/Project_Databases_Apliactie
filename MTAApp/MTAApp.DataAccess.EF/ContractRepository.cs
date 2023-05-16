@@ -15,9 +15,8 @@ namespace MTAApp.DataAccess.EF
 
         public Contract GetContractByType(string type)
         {
-            var item = dbContext.Set<Contract>()
-                                .First(c => c.Type == type);
-            return item;
+            return dbContext.Set<Contract>().Where(c => c.Type.Equals(type))
+                                            .FirstOrDefault();
         }
     }
 }
