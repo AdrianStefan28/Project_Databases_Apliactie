@@ -33,7 +33,9 @@ namespace MTAApp.UnitTests.Stefan
                 AssociationId = 1
             };
             contractRepositoryMock.Setup(c => c.Get(1)).Returns(existingContract);
-            contractRepositoryMock.Setup(c => c.Get(2)).Returns(existingContract);
+            contractRepositoryMock.Setup(c => c.Get(2)).Returns(existingContract2);
+            contractRepositoryMock.Setup(c => c.GetContractByType("Electricitate")).Returns(existingContract);
+            contractRepositoryMock.Setup(c => c.GetContractByType("Salubrizare")).Returns(existingContract2);
         }
 
         [TestMethod]

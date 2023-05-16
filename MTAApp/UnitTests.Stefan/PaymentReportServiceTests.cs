@@ -31,6 +31,7 @@ namespace MTAApp.UnitTests.Stefan
             };
             paymentReportRepositoryMock.Setup(pr => pr.Get(1)).Returns(existingPaymentReport);
             paymentReportRepositoryMock.Setup(pr => pr.Get(2)).Returns(existingPaymentReport2);
+            paymentReportRepositoryMock.Setup(pr => pr.GetPaymentReportByProfit(200)).Returns(existingPaymentReport);
         }
 
         [TestMethod]
@@ -78,7 +79,7 @@ namespace MTAApp.UnitTests.Stefan
             //arrange
             PaymentReportService service = new PaymentReportService(paymentReportRepositoryMock.Object);
             //act
-            var paymentReport = service.GetPaymentReportByProfit(300);
+            var paymentReport = service.GetPaymentReportByProfit(200);
 
             //assert
             Assert.IsNotNull(paymentReport);
