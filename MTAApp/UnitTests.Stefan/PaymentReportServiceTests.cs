@@ -72,19 +72,19 @@ namespace MTAApp.UnitTests.Stefan
             Assert.AreEqual(1, paymentReport.Id);
         }
 
-        //[TestMethod]
-        //public void GetPaymentReportByProfit_Returns_FirstCorrectPaymentReportWithGivenProfit()
-        //{
-        //    //arrange
-        //    PaymentReportService service = new PaymentReportService(paymentReportRepositoryMock.Object);
-        //    //act
-        //    var paymentReport = service.GetPaymentReportByProfit(300);
+        [TestMethod]
+        public void GetPaymentReportByProfit_Returns_FirstCorrectPaymentReportWithGivenProfit()
+        {
+            //arrange
+            PaymentReportService service = new PaymentReportService(paymentReportRepositoryMock.Object);
+            //act
+            var paymentReport = service.GetPaymentReportByProfit(300);
 
-        //    //assert
-        //    Assert.IsNotNull(paymentReport);
-        //    Assert.AreEqual(1, paymentReport.Id);
-        //    Assert.AreEqual(300, paymentReport.Profit);
-        //}
+            //assert
+            Assert.IsNotNull(paymentReport);
+            Assert.AreEqual(1, paymentReport.Id);
+            Assert.AreEqual(300, paymentReport.Profit);
+        }
 
     }
 }
