@@ -17,5 +17,10 @@ namespace MTAApp.DataAccess.EF
             return dbContext.Set<Employee>().Where(c => c.FirstName.Equals(fname) &&  c.LastName.Equals(lname))
                                             .FirstOrDefault();
         }
+        public Employee GetEmployeeByType(string type)
+        {
+            return dbContext.Set<Employee>().Where(c => c.Type.Equals(type))
+                                            .FirstOrDefault();
+        }
     }
 }

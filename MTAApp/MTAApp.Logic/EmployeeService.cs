@@ -50,5 +50,13 @@ namespace MTAApp.Logic
         {
             employee.Salary = newSalary;
         }
+        public Employee GetEmployeeByType(string Type)
+        {
+            return employeeRepository.GetEmployeeByType(Type);
+        }
+        public Employee GetEmployeeByName(string FirstName, string LastName)
+        {
+            return employeeRepository.GetEmployeeByName(FirstName, LastName);
+        }
     }
 }

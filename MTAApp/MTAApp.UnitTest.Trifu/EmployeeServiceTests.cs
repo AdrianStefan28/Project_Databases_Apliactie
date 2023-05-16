@@ -1,3 +1,5 @@
+using Moq;
+using MTAApp.DataAccess.Abstractions;
 using MTAApp.DataAccess.Model;
 using MTAApp.Logic;
 namespace MTAApp.UnitTest.Trifu
@@ -5,6 +7,33 @@ namespace MTAApp.UnitTest.Trifu
     [TestClass]
     public class EmployeeServiceTests
     {
+        private Mock<IEmployeeRepository> employeeRepositoryMock = new Mock<IEmployeeRepository>();
+        [TestInitialize]
+        public void InitializeTests()
+        {
+            Employee existingEmployee = new Employee
+            {
+                Id = 1,
+                FirstName = "Test",
+                LastName = "Test2",
+                Type = "TestType",
+                ContractDuration = 6,
+                Salary = 250,
+                AssociationId = 1
+            };
+            Employee existingEmployee2 = new Employee
+            {
+                Id = 2,
+                FirstName = "Testtest",
+                LastName = "Test22",
+                Type = "TestType2",
+                ContractDuration = 10,
+                Salary = 300,
+                AssociationId = 1
+            };
+            employeeRepositoryMock.Setup(pr => pr.Get(1)).Returns(existingEmployee);
+            employeeRepositoryMock.Setup(pr => pr.Get(2)).Returns(existingEmployee2);
+        }
         [TestMethod]
         public void CalculateEmployeeTotalPay_Return_ProductBetweenContractDurationAndSalary()
         {
@@ -88,6 +117,46 @@ namespace MTAApp.UnitTest.Trifu
             //verify the result to comply with the expected value/s
             Assert.AreEqual(300, n.Salary);
 
+        }
+
+        [TestMethod]
+        public void GetEmployee_Returns_CorrectEmployeeWithGivenId()
+        {
+            //arrange
+            EmployeeService service = new EmployeeService(employeeRepositoryMock.Object);
+            //act
+            var employee = service.GetEmployee(1);
+
+            //assert
+            Assert.IsNotNull(employee);
+            Assert.AreEqual(1, employee.Id);
+            Assert.AreEqual("Test", employee.FirstName);
+        }
+        [TestMethod]
+        public void GetEmployeeByType_Returns_CorrectEmployeeWithGivenType()
+        {
+            //arrange
+            EmployeeService service = new EmployeeService(employeeRepositoryMock.Object);
+            //act
+            var employee = service.GetEmployeeByType("TestType");
+
+            //assert
+            Assert.IsNotNull(employee);
+            Assert.AreEqual(1, employee.Id);
+            Assert.AreEqual("Test", employee.FirstName);
+        }
+        [TestMethod]
+        public void GetEmployeeByName_Returns_CorrectEmployeeWithGivenName()
+        {
+            //arrange
+            EmployeeService service = new EmployeeService(employeeRepositoryMock.Object);
+            //act
+            var employee = service.GetEmployeeByName("Test", "Test2");
+
+            //assert
+            Assert.IsNotNull(employee);
+            Assert.AreEqual(1, employee.Id);
+            Assert.AreEqual("Test", employee.FirstName);
         }
     }
 }
