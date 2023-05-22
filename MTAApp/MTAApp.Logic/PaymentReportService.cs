@@ -46,10 +46,5 @@ namespace MTAApp.Logic
             return (double)(paymentReport.Income - paymentReport.Expense);
 
         }
-
-        public PaymentReport GetPaymentReportByProfit(double profit)
-        {
-            return paymentReportRepository.GetPaymentReportByProfit(profit);
-        }
     }
 }
