@@ -38,5 +38,25 @@ namespace MTAApp.Logic
         {
             employeeRepository.Remove(id);
         }
+        public double CalculateEmployeeTotalPay(Employee employee)
+        {
+            return (double)(employee.ContractDuration * employee.Salary);
+        }
+        public string GetEmployeeType(Employee employee)
+        {
+            return employee.Type;
+        }
+        public void SetEmployeeSalary(Employee employee, double newSalary)
+        {
+            employee.Salary = newSalary;
+        }
+        public Employee GetEmployeeByType(string Type)
+        {
+            return employeeRepository.GetEmployeeByType(Type);
+        }
+        public Employee GetEmployeeByName(string FirstName, string LastName)
+        {
+            return employeeRepository.GetEmployeeByName(FirstName, LastName);
+        }
     }
 }
