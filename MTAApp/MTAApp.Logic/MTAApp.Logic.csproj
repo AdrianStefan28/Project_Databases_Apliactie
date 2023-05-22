@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Moq" Version="4.18.4" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\MTAApp.DataAccess.Abstractions\MTAApp.DataAccess.Abstractions.csproj" />
     <ProjectReference Include="..\MTAApp.DataAccess.Model\MTAApp.DataAccess.Model.csproj" />
   </ItemGroup>
