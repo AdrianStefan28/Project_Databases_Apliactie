@@ -52,13 +52,5 @@ namespace MTAApp.Logic
         {
             return apartment.TenantName;
         }
-        public Apartment GetApartmentByApNumber(int apNumber)
-        {
-            return apartmentRepository.GetApartmentByApNr(apNumber);
-        }
-        public Apartment GetApartmentByTenantName(string tenantName)
-        {
-            return apartmentRepository.GetApartmentByTenantName(tenantName);
-        }
     }
 }

@@ -19,9 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAApp.DataAccess.Model", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAApp.Logic", "MTAApp.Logic\MTAApp.Logic.csproj", "{FC180724-57A9-4B65-8CDF-A02FE6DA0483}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAApp.UnitTests.Stefan", "UnitTests.Stefan\MTAApp.UnitTests.Stefan.csproj", "{6069280B-2F9B-4E06-BBA2-7B0A1A9A5C3F}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAApp.UnitTest.V", "MTAApp.UniTestVasile\MTAApp.UnitTest.V.csproj", "{E2ABAFB4-894E-46BB-B66E-954562A6333C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTAApp.UnitTests.Stefan", "UnitTests.Stefan\MTAApp.UnitTests.Stefan.csproj", "{6069280B-2F9B-4E06-BBA2-7B0A1A9A5C3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,10 +51,6 @@ Global
 		{6069280B-2F9B-4E06-BBA2-7B0A1A9A5C3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6069280B-2F9B-4E06-BBA2-7B0A1A9A5C3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6069280B-2F9B-4E06-BBA2-7B0A1A9A5C3F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E2ABAFB4-894E-46BB-B66E-954562A6333C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E2ABAFB4-894E-46BB-B66E-954562A6333C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E2ABAFB4-894E-46BB-B66E-954562A6333C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E2ABAFB4-894E-46BB-B66E-954562A6333C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

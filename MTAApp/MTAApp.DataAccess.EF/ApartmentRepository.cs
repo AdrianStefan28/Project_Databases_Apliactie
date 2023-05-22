@@ -19,10 +19,5 @@ namespace MTAApp.DataAccess.EF
             return dbContext.Set<Apartment>().Where(c => c.ApNumber.Equals(apNr))
                                             .FirstOrDefault();
         }
-        public Apartment GetApartmentByTenantName(string tenantName)
-        {
-            return dbContext.Set<Apartment>().Where(c => c.TenantName.Equals(tenantName))
-                                            .FirstOrDefault();
-        }
     }
 }
