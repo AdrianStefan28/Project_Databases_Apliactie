@@ -34,6 +34,11 @@ namespace MTAApp.UnitTest.V
             };
             apartmentRepositoryMock.Setup(pr => pr.Get(1)).Returns(existingProduct);
             apartmentRepositoryMock.Setup(pr => pr.Get(2)).Returns(existingProduct2);
+            apartmentRepositoryMock.Setup(pr => pr.GetApartmentByApNr(3)).Returns(existingProduct);
+            apartmentRepositoryMock.Setup(pr => pr.GetApartmentByApNr(6)).Returns(existingProduct2);
+            apartmentRepositoryMock.Setup(pr => pr.GetApartmentByTenantName("Testx")).Returns(existingProduct);
+            apartmentRepositoryMock.Setup(pr => pr.GetApartmentByTenantName("Test")).Returns(existingProduct2);
+
         }
 
         [TestMethod]
