@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "xY9ZjF5OvNSynVK9KM9DGf5SCs9UZSMbqn1jHYrvJthUhOVQKSTdOHrKH242LvqXzWEpQ0/nk1B8yov/iDs4PA==",
+  "dgSpecHash": "D4xWYz/OYwZDWZnxdFXWawCMA9BGQ96TcczT4AlIAB89ZlDvjGFTFe9geOerf8DRGLMpDGw/6kRVq7JaU4DkpQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ady\\Documents\\Facultate\\Proiect Aplicatie\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.Model\\MTAApp.DataAccess.Model.csproj",
+  "projectFilePath": "D:\\SE-project\\Project_Databases_Apliactie\\MTAApp\\MTAApp.DataAccess.Model\\MTAApp.DataAccess.Model.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Ady\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
-    "C:\\Users\\Ady\\.nuget\\packages\\moq\\4.18.4\\moq.4.18.4.nupkg.sha512",
-    "C:\\Users\\Ady\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512"
+    "C:\\Users\\Vasile\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
+    "C:\\Users\\Vasile\\.nuget\\packages\\moq\\4.18.4\\moq.4.18.4.nupkg.sha512",
+    "C:\\Users\\Vasile\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

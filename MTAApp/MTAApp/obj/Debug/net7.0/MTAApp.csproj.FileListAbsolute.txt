@@ -849,3 +849,5 @@ D:\SE-project\Project_Databases_Apliactie\MTAApp\MTAApp\obj\Debug\net7.0\MTAApp.
 D:\SE-project\Project_Databases_Apliactie\MTAApp\MTAApp\obj\Debug\net7.0\ref\MTAApp.dll
 C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp\bin\Debug\net7.0\Castle.Core.dll
 C:\Users\Ady\Documents\Facultate\Proiect Aplicatie\Project_Databases_Apliactie\MTAApp\MTAApp\bin\Debug\net7.0\Moq.dll
+D:\SE-project\Project_Databases_Apliactie\MTAApp\MTAApp\bin\Debug\net7.0\Castle.Core.dll
+D:\SE-project\Project_Databases_Apliactie\MTAApp\MTAApp\bin\Debug\net7.0\Moq.dll
