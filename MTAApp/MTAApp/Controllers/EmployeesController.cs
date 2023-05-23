@@ -8,10 +8,12 @@ namespace MTAApp.Controllers
     public class EmployeesController : Controller
     {
         private readonly EmployeeService employeeService;
+        private readonly PaymentReportService paymentReportService;
 
-        public EmployeesController(EmployeeService emplService)
+        public EmployeesController(EmployeeService emplService, PaymentReportService payReportService)
         {
             employeeService = emplService;
+            paymentReportService = payReportService;
         }
 
         public ActionResult Index()
@@ -47,6 +49,13 @@ namespace MTAApp.Controllers
             try
             {
                 employeeService.AddEmployee(employee);
+                var paymentReport = paymentReportService.GetPaymentReportByAssociationId(employee.AssociationId);
+                if (paymentReport != null && employee.Salary != null) 
+                {
+                    paymentReport.EmployeesSalary += employee.Salary;
+                    paymentReportService.UpdatePaymentReportEmployeesSalary(paymentReport);
+                    paymentReportService.UpdatePaymentReportProfit(paymentReport);
+                }
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -84,6 +93,13 @@ namespace MTAApp.Controllers
             try
             {
                 employeeService.UpdateEmployee(employee);
+                var paymentReport = paymentReportService.GetPaymentReportByAssociationId(employee.AssociationId);
+                if (paymentReport != null && employee.Salary != null)
+                {
+                    paymentReport.EmployeesSalary += employee.Salary;
+                    paymentReportService.UpdatePaymentReportEmployeesSalary(paymentReport);
+                    paymentReportService.UpdatePaymentReportProfit(paymentReport);
+                }
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -115,7 +131,15 @@ namespace MTAApp.Controllers
         {
             try
             {
+                var employee = employeeService.GetEmployee(id);
                 employeeService.DeleteEmployee(id);
+                var paymentReport = paymentReportService.GetPaymentReportByAssociationId(employee.AssociationId);
+                if (paymentReport != null && employee.Salary != null)
+                {
+                    paymentReport.EmployeesSalary -= employee.Salary;
+                    paymentReportService.UpdatePaymentReportEmployeesSalary(paymentReport);
+                    paymentReportService.UpdatePaymentReportProfit(paymentReport);
+                }
                 return RedirectToAction(nameof(Index));
             }
             catch

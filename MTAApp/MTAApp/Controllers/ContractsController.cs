@@ -7,10 +7,12 @@ namespace MTAApp.Controllers
     public class ContractsController : Controller
     {
         private readonly ContractService contractService;
+        private readonly PaymentReportService paymentReportService;
 
-        public ContractsController(ContractService contrService)
+        public ContractsController(ContractService contrService, PaymentReportService payReportService)
         {
             contractService = contrService;
+            paymentReportService = payReportService;
         }
 
         public ActionResult Index()
@@ -46,6 +48,13 @@ namespace MTAApp.Controllers
             try
             {
                 contractService.AddContract(contract);
+                var paymentReport = paymentReportService.GetPaymentReportByAssociationId(contract.AssociationId);
+                if(paymentReport != null && contract.Cost != null && contract.ContractDuration != null) 
+                {
+                    paymentReport.ContractsCost += contract.ContractDuration * contract.Cost;
+                    paymentReportService.UpdatePaymentReportContractsCost(paymentReport);
+                    paymentReportService.UpdatePaymentReportProfit(paymentReport);
+                }
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -82,6 +91,13 @@ namespace MTAApp.Controllers
             try
             {
                 contractService.UpdateContract(contract);
+                var paymentReport = paymentReportService.GetPaymentReportByAssociationId(contract.AssociationId);
+                if (paymentReport != null && contract.Cost != null && contract.ContractDuration != null)
+                {
+                    paymentReport.ContractsCost += contract.ContractDuration * contract.Cost;
+                    paymentReportService.UpdatePaymentReportContractsCost(paymentReport);
+                    paymentReportService.UpdatePaymentReportProfit(paymentReport);
+                }
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -113,7 +129,15 @@ namespace MTAApp.Controllers
         {
             try
             {
+                var contract = contractService.GetContract(id);
                 contractService.DeleteContract(id);
+                var paymentReport = paymentReportService.GetPaymentReportByAssociationId(contract.AssociationId);
+                if (paymentReport != null && contract.Cost != null && contract.ContractDuration != null)
+                {
+                    paymentReport.ContractsCost -= contract.ContractDuration * contract.Cost;
+                    paymentReportService.UpdatePaymentReportContractsCost(paymentReport);
+                    paymentReportService.UpdatePaymentReportProfit(paymentReport);
+                }
                 return RedirectToAction(nameof(Index));
             }
             catch
