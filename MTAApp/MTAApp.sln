@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAApp.UnitTests.Stefan", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAApp.UnitTest.V", "MTAApp.UniTestVasile\MTAApp.UnitTest.V.csproj", "{E2ABAFB4-894E-46BB-B66E-954562A6333C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTAApp.UnitTest.Trifu", "MTAApp.UnitTest.Trifu\MTAApp.UnitTest.Trifu.csproj", "{C7780977-1789-4DC9-9474-AFCC3C9EADE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAApp.UnitTest.Trifu", "MTAApp.UnitTest.Trifu\MTAApp.UnitTest.Trifu.csproj", "{C7780977-1789-4DC9-9474-AFCC3C9EADE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTAApp.AutomatedTests", "MTAApp.AutomatedTests\MTAApp.AutomatedTests.csproj", "{95CC3AB4-F3C2-4BC5-B3B3-F5783C9C769F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{C7780977-1789-4DC9-9474-AFCC3C9EADE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7780977-1789-4DC9-9474-AFCC3C9EADE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7780977-1789-4DC9-9474-AFCC3C9EADE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95CC3AB4-F3C2-4BC5-B3B3-F5783C9C769F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95CC3AB4-F3C2-4BC5-B3B3-F5783C9C769F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95CC3AB4-F3C2-4BC5-B3B3-F5783C9C769F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95CC3AB4-F3C2-4BC5-B3B3-F5783C9C769F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
