@@ -1,10 +1,5 @@
 ﻿using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MTAApp.AutomatedTests.PageObjects
 {
@@ -12,7 +7,7 @@ namespace MTAApp.AutomatedTests.PageObjects
     {
         private IWebDriver webDriver;
 
-        [FindsBy(How = How.CssSelector, Using = "main")]
+        [FindsBy(How = How.XPath, Using = "/html/body/div[2]/main/table/tbody")]
         private IWebElement contractsList;
 
         [FindsBy(How = How.LinkText, Using = "Add New Contract")]
@@ -36,8 +31,9 @@ namespace MTAApp.AutomatedTests.PageObjects
         }
 
         public bool ContractExists(string contractSupplierName) 
-        {
-            var elements = contractsList.FindElements(By.TagName("div"));
+        {          
+            var elements = contractsList.FindElements(By.XPath("tr/td"));
+        
             return elements.Where(element => element.Text.Equals(contractSupplierName)).Count() > 0;
         }
 
